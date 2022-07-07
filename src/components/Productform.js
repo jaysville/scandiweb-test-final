@@ -15,18 +15,33 @@ const Productform = (props) => {
       SetDvdForm(true);
       SetBookForm(false);
       SetFurnitureForm(false);
+      values.weight = "";
+      values.length = "";
+      values.height = "";
+      values.width = "";
     } else if (choice === "Book") {
       SetBookForm(true);
       SetDvdForm(false);
       SetFurnitureForm(false);
+      values.size = "";
+      values.length = "";
+      values.height = "";
+      values.width = "";
     } else if (choice === "Furniture") {
       SetDvdForm(false);
       SetBookForm(false);
       SetFurnitureForm(true);
+      values.size = "";
+      values.weight = "";
     } else {
       SetDvdForm(false);
       SetBookForm(false);
       SetFurnitureForm(false);
+      values.size = "";
+      values.length = "";
+      values.height = "";
+      values.width = "";
+      values.weight = "";
     }
   };
 
