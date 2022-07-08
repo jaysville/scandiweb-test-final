@@ -9,7 +9,6 @@ const DVDForm = (props) => {
           value={props.sizeValue}
           onBlur={props.onBlur}
           onChange={props.onChange}
-          className={props.className}
           required
         />
       </div>

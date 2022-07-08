@@ -10,7 +10,9 @@ const Home = () => {
 
   async function getProducts() {
     setIsLoading(true);
-    const response = await axios.get("http://localhost/scandiweb-backend/");
+    const response = await axios.get(
+      "https://jay-scandiweb-backend.herokuapp.com/"
+    );
     const products = response.data;
     const dataList = [];
 
@@ -40,7 +42,7 @@ const Home = () => {
 
   const deleteProductHandler = () => {
     if (productsToDelete.length > 0) {
-      fetch("http://localhost/scandiweb-backend/delete.php", {
+      fetch("https://jay-scandiweb-backend.herokuapp.com/delete.php", {
         method: "POST",
         body: JSON.stringify(productsToDelete),
         headers: {

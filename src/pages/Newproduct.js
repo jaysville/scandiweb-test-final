@@ -4,7 +4,7 @@ import Productform from "../components/Productform";
 const Newproduct = () => {
   const navigate = useNavigate();
   const addProductHandler = (productData) => {
-    fetch("http://localhost/scandiweb-backend/add.php", {
+    fetch("https://jay-scandiweb-backend.herokuapp.com/add.php", {
       method: "POST",
       body: JSON.stringify(productData),
       headers: {
