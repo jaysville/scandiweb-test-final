@@ -16,7 +16,7 @@ const Products = (props) => {
             <div>
               <p className="text-center">{product.sku}</p>
               <p className="text-center">{product.name}</p>
-              <p className="text-center">${product.price} </p>
+              <p className="text-center">{product.price} $ </p>
               <Attribute data={product} />
             </div>
           </div>
