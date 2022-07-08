@@ -105,6 +105,7 @@ const Productform = (props) => {
           <input
             type="number"
             id="price"
+            step="any"
             value={values.price}
             onBlur={handleBlur}
             onChange={handleChange}
