@@ -6,6 +6,7 @@ const DVDForm = (props) => {
         <input
           type="number"
           id="size"
+          step="any"
           value={props.sizeValue}
           onBlur={props.onBlur}
           onChange={props.onChange}

@@ -6,6 +6,7 @@ const FurnitureForm = (props) => {
         <input
           type="number"
           id="height"
+          step="any"
           value={props.heightValue}
           onBlur={props.onBlur}
           onChange={props.onChange}
@@ -18,6 +19,7 @@ const FurnitureForm = (props) => {
         <input
           type="number"
           id="width"
+          step="any"
           value={props.widthValue}
           onBlur={props.onBlur}
           onChange={props.onChange}
@@ -30,6 +32,7 @@ const FurnitureForm = (props) => {
         <input
           type="number"
           id="length"
+          step="any"
           value={props.lengthValue}
           onBlur={props.onBlur}
           onChange={props.onChange}
