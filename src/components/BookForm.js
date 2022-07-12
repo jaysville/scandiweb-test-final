@@ -7,6 +7,7 @@ const BookForm = (props) => {
           type="number"
           id="weight"
           step="any"
+          min="0"
           value={props.weightValue}
           onBlur={props.onBlur}
           onChange={props.onChange}

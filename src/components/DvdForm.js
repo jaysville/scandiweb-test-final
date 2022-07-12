@@ -7,6 +7,7 @@ const DVDForm = (props) => {
           type="number"
           id="size"
           step="any"
+          min="0"
           value={props.sizeValue}
           onBlur={props.onBlur}
           onChange={props.onChange}
